@@ -1,54 +1,101 @@
-# React + TypeScript + Vite
+# Maksim Zaytsev - Personal Links Tree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal link tree website built with React, TypeScript, and Tailwind CSS. This project showcases Maksim Zaytsev's professional profile as a fullstack developer based in the Czech Republic.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Clean, professional interface with glassmorphism effects
+- **Responsive**: Fully responsive design that works on all devices
+- **SEO Optimized**: Comprehensive meta tags and Open Graph support
+- **Fast Performance**: Built with Vite for optimal loading speeds
+- **Accessibility**: WCAG compliant with proper ARIA labels
+- **Social Integration**: Direct links to professional social profiles
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 19 + TypeScript
+- **Styling**: Tailwind CSS 4
+- **Build Tool**: Vite
+- **SEO**: React Helmet Async
+- **Icons**: React Icons
+- **Linting**: ESLint with TypeScript support
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/visit-zaytsev.git
+cd visit-zaytsev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🏗️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run generate-sitemap` - Generate sitemap.xml
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ProfileCard.tsx    # Main profile component
+│   └── SEOHead.tsx        # SEO meta tags component
+├── App.tsx                # Main application component
+└── main.tsx              # Application entry point
+```
+
+## 🎨 Customization
+
+### Profile Information
+Update the profile information in `src/components/ProfileCard.tsx`:
+- Name and description
+- Profile photo (replace `/photo-profile.png`)
+- Social media links
+- Tech stack icons
+
+### SEO Settings
+Modify SEO settings in `src/components/SEOHead.tsx`:
+- Page title and description
+- Open Graph images
+- Twitter card settings
+- Canonical URLs
+
+### Styling
+The project uses Tailwind CSS for styling. Customize the design by:
+- Modifying Tailwind classes in components
+- Updating the background image (`/background.jpg`)
+- Adjusting color schemes and typography
+
+## 🌐 Deployment
+
+The site is optimized for deployment on various platforms:
+
+- **Vercel**: Connect your GitHub repository for automatic deployments
+- **Netlify**: Drag and drop the `dist` folder after building
+- **GitHub Pages**: Use the `gh-pages` branch for static hosting
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Contact
+
+- **Website**: [zaytsev.cz](https://www.zaytsev.cz/)
+- **LinkedIn**: [zaytsevcz](https://www.linkedin.com/in/zaytsevcz/)
+- **GitHub**: [zaymax](https://github.com/zaymax)
+- **Email**: maksim@zaytsev.cz

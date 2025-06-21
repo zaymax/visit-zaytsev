@@ -1,0 +1,25 @@
+{
+  "name": "Maksim Zaytsev - Fullstack Developer",
+  "short_name": "Max Zaytsev",
+  "description": "Fullstack developer based in the Czech Republic, specializing in enterprise systems with a strong focus on UX/UI design",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+} 
