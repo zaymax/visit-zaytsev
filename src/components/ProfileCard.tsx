@@ -63,15 +63,21 @@ const ProfileCard: React.FC = () => {
 
         {/* Action Buttons */}
         <div className="w-full space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-          <a 
-            href="" 
-            className="relative group block bg-gray-800 text-white text-center py-3 sm:py-4 px-4 sm:px-6 rounded-xl w-full font-semibold hover:bg-gray-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
-          >
-            <div className="flex items-center justify-center text-sm sm:text-base">
-              <FaDownload className="mr-2 text-sm sm:text-base" />
-              Download CV
+          <div className="relative">
+            <a 
+              href="#" 
+              className="relative group block bg-gray-400 text-white text-center py-3 sm:py-4 px-4 sm:px-6 rounded-xl w-full font-semibold cursor-not-allowed opacity-75 transition-all duration-300 focus:outline-none"
+              onClick={(e) => e.preventDefault()}
+            >
+              <div className="flex items-center justify-center text-sm sm:text-base">
+                <FaDownload className="mr-2 text-sm sm:text-base" />
+                Download CV
+              </div>
+            </a>
+            <div className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
+              Coming Soon
             </div>
-          </a>
+          </div>
 
           <a 
             href="https://www.zaytsev.cz/" 
