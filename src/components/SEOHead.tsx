@@ -44,7 +44,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       
       {/* Additional SEO */}
       <link rel="canonical" href={url} />
+      <link rel="icon" href="/favicon.ico" />
       <meta name="robots" content="index, follow" />
+      <meta name="application-name" content="Zaytsev" />
       <meta name="theme-color" content="#111827" />
     </Helmet>
   );
